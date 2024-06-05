@@ -1,0 +1,56 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Ignore bundler config
+/.bundle
+
+# Ignore the directory where Rails stores the database schema cache
+/db/schema.rb
+/db/schema_cache.dump
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+/config/credentials.yml.enc
+
+# Ignore pidfiles, but keep the directory itself.
+/tmp/pids/*
+!/tmp/pids/.keep
+
+# Ignore yarn files
+/yarn-error.log
+/node_modules
+/package-lock.json
+
+# Ignore uploaded files
+/public/system
+/public/uploads
+
+# Ignore coverage folder used by tools like SimpleCov
+/coverage/
+
+# Ignore specs related files
+/spec/examples.txt
+/spec/factories.rb
+/spec/spec_helper.rb
+
+# Ignore dotenv environment variables file
+/.env
+
+# Ignore Byebug command history file.
+/.byebug_history
+
+# Ignore assets that are automatically precompiled
+/public/assets
+/public/packs
+/public/packs-test
+/node_modules
+/app/javascript/packs/*.js
