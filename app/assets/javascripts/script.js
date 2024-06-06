@@ -23,6 +23,17 @@ document.addEventListener('drop', (event) => {
   }
 });
 
+document.querySelectorAll('.box').forEach(box => {
+  box.addEventListener('click', (event) => {
+    alert(event.target);
+    const range = document.createRange();
+    range.selectNodeContents(event.target);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+  });
+});
+
 function checkOverlap(element) {
   const boxes = document.querySelectorAll('.box');
   const rect1 = element.getBoundingClientRect();
