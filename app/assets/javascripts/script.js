@@ -25,7 +25,6 @@ document.addEventListener('drop', (event) => {
 
 document.querySelectorAll('.box').forEach(box => {
   box.addEventListener('click', (event) => {
-    alert(event.target);
     const range = document.createRange();
     range.selectNodeContents(event.target);
     const selection = window.getSelection();
